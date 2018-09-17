@@ -24,7 +24,7 @@ export class AppComponent {
     console.dir(token);
     const headers = new HttpHeaders().set('Content-Type', 'application/json');
     const options = { headers: headers };
-    debugger;
+    
     return this.http.post(this.server, { response: token }, options).toPromise()
       .then(data => {
         console.dir(data);
