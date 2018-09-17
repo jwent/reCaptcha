@@ -12,8 +12,8 @@ import { map, filter, switchMap } from 'rxjs/operators';
 export class AppComponent {
   title = 'app';
 
-  secret = '6LeMTnAUAAAAAL-4tAWNedcXAj7mqToWYQ39ONPE';
-  server = 'https://localhost:44316/Api/Auth/ReCaptchaVerifyUser';
+  secret = '';
+  server = '';
 
   @ViewChild(ReCaptchaComponent) captcha: ReCaptchaComponent;
 
